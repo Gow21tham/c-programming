@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-	int a,b,c;
-	printf("enter the year=");
-	scanf("%d",&a);
-	printf("enter the date=");
-	scanf("%d",&b);
-	printf("enter the month=");
-	scanf("%d",&c);
-	if(a%4==0)
+	int  age,x;
+	printf("enter age of person:");
+  if(scanf("%d",&age)==1)
 	{
-		printf("the date is leap year");
-	}
-	else
+    if(age>17)
 	{
-		printf("the date is not a leap year");
-		
+		printf("\nperson is eligible for voting");
 	}
-	
-}
+	else{
+	 printf("\nperson is not eligible");
+	 x=18-age;
+    	printf("\nyour allowed to vote after %d",x);
+	}
+	}
+	else{
+		printf("invalid");
+	}
+	return 0;
